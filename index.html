@@ -6,8 +6,17 @@
   <title>Dual.Infodose v7.9.1 STABLE · KOBLLUX VISIO</title>
 
   <meta name="theme-color" content="#050811" />
-  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="manifest" href="./manifest.json">
 
+
+<link rel="apple-touch-icon" href="./icon-192.png">
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js')
+      .then(() => console.log('Service Worker Registered'));
+  }
+</script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap">
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
