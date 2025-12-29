@@ -1,5 +1,5 @@
 
-const CACHE_NAME = 'pwa-dual.KxT.v5-v0';
+const CACHE_NAME = 'pwa-dual.KxT.v5-v2';
 const ASSETS = [
     './',
     'index.html',
