@@ -99,16 +99,16 @@
     #chat-container { position: absolute; top: 0; left: 50%; transform: translateX(-50%); bottom: 0; padding: 140px 16px 100px 16px; z-index: 5; overflow-y: auto; display: flex; flex-direction: column; gap: 16px; transition: opacity 0.4s ease; scroll-behavior: smooth; max-width: 980px; width: calc(100% - 48px); }
     #chat-container.collapsed { opacity: 0; pointer-events: none; }
 
-    .msg-block { max-width: 76%; padding: 12px 16px; border-radius: 12px; position: relative; animation: slideIn 0.3s ease-out; line-height: 1.5; font-size: 0.95rem; word-wrap: break-word; display: block; }
+    .msg-block { max-width: 98%; padding: 12px 16px; border-radius: 12px; position: relative; animation: slideIn 0.3s ease-out; line-height: 1.5; font-size: 0.95rem; word-wrap: break-word; display: block; }
     /* keep messages visually closer to center while preserving left/right identity */
     .msg-block.user { align-self: flex-end; margin-left: auto; margin-right: 0; background: rgba(0,245,255,0.08); border-right: 2px solid var(--primary); text-align: right; }
     .msg-block.ai { align-self: flex-start; margin-right: auto; margin-left: 0; background: rgba(255,255,255,0.05); border-left: 2px solid var(--secondary); }
-    .msg-block.system { align-self: center; margin-left: auto; margin-right: auto; font-size: 0.75rem; opacity: 0.9; text-align: center; border: 1px dashed rgba(255,255,255,0.2); background: transparent; padding: 6px 12px; font-style: italic; }
+    .msg-block.system { align-self: center; margin-left: auto; margin-right: auto; font-size: 0.78rem; opacity: 0.9; text-align: center; border: 1px dashed rgba(255,255,255,0.2); background: transparent; padding: 6px 12px; font-style: italic; }
     @keyframes slideIn { from{opacity:0; transform:translateY(10px)} to{opacity:1; transform:translateY(0)} }
 
     /* Code & Preview */
     pre { position: relative; background: rgba(0,0,0,0.4); border-radius: 8px; margin: 10px 0; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); }
-    code { font-family: 'JetBrains Mono', monospace; font-size: 0.85rem; }
+    code { font-family: 'JetBrains Mono', monospace; font-size: 0.45rem; }
     .copy-code-btn { position: absolute; top: 8px; right: 8px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: var(--primary); font-size: 0.7rem; padding: 4px 8px; border-radius: 4px; cursor: pointer; z-index: 10; opacity: 0.7; transition: 0.2s; }
     .copy-code-btn:hover { opacity: 1; background: var(--primary); color: #000; }
 
